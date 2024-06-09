@@ -1,0 +1,119 @@
+.trendings{
+    .container{
+        width: 100%;
+    }
+    margin-bottom: 50px;
+}
+
+.trendings__wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .trendings__cards{
+        display: flex;
+        gap: 50px;
+        overflow-y: hidden;
+        padding: 30px 0px;
+
+        &::-webkit-scrollbar{
+            height: 10px;
+        }
+        
+        &::-webkit-scrollbar-track{
+            background-color: #fff;
+            border-radius: 20px;
+        }
+        
+        &::-webkit-scrollbar-thumb{
+            background: #FEB786;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    
+        &::-webkit-scrollbar-thumb:hover{
+            background: #ffd3b6;
+        }
+    }
+}
+
+.trendings__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    &:hover h3::after{
+        background-color: #191919;
+        transform: scale(1);
+    }
+
+    img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    h3{
+        max-width: 122px;
+        text-align: center;
+        user-select: none;
+        color: #191919;
+        position: relative;
+
+        &::after{
+          transition: 0.5s;
+          content: '';
+          height: 2px;
+          width: 100%;
+          background-color: #fff;
+          position: absolute;
+          bottom: -10px;
+          left: 0px;
+          align-self: center;
+          transform: scale(0);
+        }
+    }
+}
+
+.trendings__link{
+    text-decoration: none;
+}
+
+.trendings__links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.trendings__link2{
+    text-decoration: none;
+    color: #191919;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+
+    .link__icon{
+        transition: 0.3s;
+        transform: translateX(0px);
+    }
+
+    &:hover .link__icon{
+        transform: translateX(10px);
+    }
+}
+
+.trendings__links-title{
+    font-size: 24px;
+    font-style: oblique;
+    color: #191919;
+    user-select: none;
+    cursor: text;
+}

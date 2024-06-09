@@ -1,0 +1,11 @@
+.mini-footer{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    .mini-footer__link{
+        font-size: 11px;
+        color: #767676;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,131 @@
+.login__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-bottom: 200px;
+
+    h2 {
+        color: #191919;
+        font-style: oblique;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .login__register {
+        color: #000;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+
+        a {
+            color: #3665f3;
+        }
+    }
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+
+    .login__input {
+        border: 1px solid #8f8f8f;
+        border-radius: 8px;
+        background-color: #f7f7f7;
+        padding: 11px 15px;
+        width: 100%;
+        outline: none;
+        margin-bottom: 25px;
+
+        &::placeholder {
+            color: #000;
+        }
+    }
+
+    button {
+        width: 295px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #1c7cdc;
+        border-radius: 24px;
+        background-color: #1c7cdc;
+        color: #fff;
+        cursor: pointer;
+        font-style: oblique;
+        font-size: 16px;
+        margin-bottom: 105px;
+    }
+
+    .login__checkbox {
+        user-select: none;
+    }
+
+}
+
+.login__text {
+    font-size: 13px;
+    color: #000000;
+}
+
+.login__learn-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 13px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+
+    .login__learn-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .login__learn-text {
+            font-size: 13px;
+            color: #3665f3;
+        }
+
+        .login__icon {
+            font-size: 13px;
+            color: #3665f3;
+        }
+    }
+
+    .login__info{
+        width: 355px;
+        height: 150px;
+        background-color: #3665f3;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 30px 40px;
+        padding-bottom: 0;  
+        position: absolute;
+        top: 30px;
+        opacity: 0;
+        transition: 0.3s;
+
+        .login__info-icon{
+            color: #fff;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            font-size: 20px;
+        }
+
+        p{
+            color: #fff;
+        }
+    }
+}
+
+.login__learn-wrapper[data-is-learn="true"]{
+    .login__info{
+        opacity: 1;
+    }
+}

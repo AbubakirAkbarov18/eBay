@@ -1,0 +1,23 @@
+.button-scroll-up{
+    position: fixed;
+    right: -100px;
+    bottom: 200px;
+    border: 1px solid #41413f;
+    background-color: #fff; 
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+
+    .button-scroll-up__icon{
+        font-size: 45px;
+    }
+}
+
+.button-scroll-up[data-is-show='true']{
+    right: 0;
+}

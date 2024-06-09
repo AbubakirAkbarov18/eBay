@@ -1,0 +1,11 @@
+.LittleFooter{
+    border-top: 1px solid #cccccc;
+}
+
+.LittleFooter__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

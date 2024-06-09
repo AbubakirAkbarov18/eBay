@@ -1,0 +1,141 @@
+.hero{
+    margin-top: 52px;
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
+
+    .container--hero {
+        width: 100%;
+    }
+}
+
+.hero__top {
+    width: 100%;
+    border-top: 1px solid #dddddd;
+    padding: 9px 54px;
+}
+
+.hero__top-list {
+    display: flex;
+    justify-content: space-between;
+
+    .hero__top-link {
+        text-decoration: none;
+        color: #333333;
+        font-size: 12px;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .hero__top-link--border {
+        padding-bottom: 10px;
+        font-style: oblique;
+        border-bottom: 2px solid #555555;
+    }
+}
+
+.hero__bottom-slider {
+    width: 100%;
+    height: 330px;
+}
+
+.hero__bottom-slide {
+    background: #feb786;
+    padding: 30px 0px;
+
+    .hero__bottom-slide-wrapper{
+        display: flex;
+        width: 100%;
+        gap: 100px;
+        padding: 0 40px;
+    }
+
+    .hero__bottom-slide-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 8px;
+        max-width: 332px;
+
+        h1 {
+            max-width: 291px;
+            font-style: italic;
+            font-size: 36px;
+            line-height: 46.8px;
+        }
+
+        p{
+            font-size: 17px;
+        }
+
+        button{
+            width: 144px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 0px;
+            font-size: 16px;
+            background-color: transparent;
+            border: 1px solid #5c1b05;
+            margin-top: 16px;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #5c1b05;
+                color: #fff;
+            }
+
+            &:hover > .hero__bottom-slide-icon{
+                color: #fff;
+                transform: translateX(10px);
+            }
+
+            .hero__bottom-slide-icon{
+                font-size: 20px;
+                color: #5c1b05;
+                transition: 0.5s;
+                transform: translateX(0px);
+                transition: 0.3s;
+            }
+        }
+    }
+
+    .hero-bottom__single{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .hero__bottom-link{
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            gap: 5px;
+            text-decoration: none;
+            color: #5c1b05;
+            max-width: 200px;
+        }
+    }
+}
+
+.hero-bottom__images-wrapper{
+    display: flex;
+    gap: 55px;
+}
